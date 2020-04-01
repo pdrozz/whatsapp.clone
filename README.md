@@ -8,19 +8,50 @@
 
 > Send message WORKING
 
+> Status Upload WORKING
+
 > Create Profile WORKING
 <br>
 
 
-<img src="https://user-images.githubusercontent.com/59422918/77435355-f7659700-6dc0-11ea-9fe6-8622a02d3fbd.jpeg" alt="alt text" width="270px" height="500px">
-<img src="https://user-images.githubusercontent.com/59422918/77435406-09dfd080-6dc1-11ea-914d-b405afaf71ef.jpeg" alt="alt text" width="270px" height="500px">
-<img src="https://user-images.githubusercontent.com/59422918/77435437-13693880-6dc1-11ea-8b52-58e585a5ecce.jpeg" alt="alt text" width="270px" height="500px">
+<img src="https://user-images.githubusercontent.com/59422918/78160904-08468600-741b-11ea-90ee-529e29d96b4c.png" alt="alt text" >
 
 
-## Install
+## How to use
+
+Windows:
+
+1. Clone the project
+
+2. Create a Firebase Project
+
+3. Replace file "YOUR CONFIG FIREBASE FILE HERE.JSON" with your firebase config file
+
+4. Edit rules of Firebase Realtime Datebase:
+```bash
+"rules": {
+    ".read": true,
+    ".write": true
+  }
+```
+5. Edit rules of Firebase Storage
+```bash
+rules_version = '2' #Current Version;
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if true; #Edit this line
+    }
+  }
+}
+
+```
+
+
+
 
 Android:
 
-Download the apk [soon](https://github.com/pdrozz/alcool_ou_gasolina/raw/master/App%20Alcool%20ou%20Gasol.apk)
+Download the apk [soon](https://github.com/0.apk)
 
 
