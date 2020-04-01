@@ -25,16 +25,18 @@ Windows:
 
 2. Create a Firebase Project
 
-3. Replace file "YOUR CONFIG FIREBASE FILE HERE.JSON" with your firebase config file
+3. Sign up SHA1 app key in Firebase Project
 
-4. Edit rules of Firebase Realtime Datebase:
+4. Replace file "YOUR CONFIG FIREBASE FILE HERE.JSON" with your firebase config file
+
+5. Edit rules of Firebase Realtime Datebase:
 ```bash
 "rules": {
     ".read": true,
     ".write": true
   }
 ```
-5. Edit rules of Firebase Storage
+6. Edit rules of Firebase Storage
 ```bash
 rules_version = '2' #Current Version;
 service firebase.storage {
@@ -46,12 +48,10 @@ service firebase.storage {
 }
 
 ```
+## Installation 
 
-
-
-
+### APK
 Android:
-
 Download the apk [soon](https://github.com/0.apk)
 
 
