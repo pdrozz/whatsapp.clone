@@ -27,13 +27,13 @@ Windows:
 
 3. Sign up SHA1 app key in Firebase Project
 
-4. Replace file "YOUR CONFIG FIREBASE FILE HERE.JSON" with your firebase config file
+4. Replace file "app/YOUR CONFIG FIREBASE FILE HERE.JSON" with your firebase config file
 
 5. Edit rules of Firebase Realtime Datebase:
 ```bash
 "rules": {
-    ".read": true,
-    ".write": true
+    ".read": true, #Edit here
+    ".write": true #Edit here
   }
 ```
 6. Edit rules of Firebase Storage
